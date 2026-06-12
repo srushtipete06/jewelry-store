@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Jewelry Store</title>
+    <style>
+        /* Minimal & Elegant Theme */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
+        body { background-color: #faf8f6; color: #2c2523; }
+        
+        /* Header & Navigation */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #ffffff; border-bottom: 1px solid #eae1db; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 24px; font-weight: bold; letter-spacing: 2px; color: #4a3e3d; }
+        .instagram-link { text-decoration: none; color: #d62976; font-weight: 600; font-size: 14px; border: 1px solid #d62976; padding: 8px 16px; border-radius: 20px; transition: 0.3s; }
+        .instagram-link:hover { background: #d62976; color: #fff; }
+
+        /* Hero Banner Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover; height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px; }
+        .hero h1 { font-size: 42px; margin-bottom: 10px; font-weight: 300; letter-spacing: 3px; }
+        .hero p { font-size: 18px; max-width: 600px; font-weight: 300; opacity: 0.9; }
+
+        /* Product Section */
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .section-title { text-align: center; font-size: 28px; margin-bottom: 30px; letter-spacing: 1px; color: #4a3e3d; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        
+        /* Product Card Layout */
+        .product-card { background: white; border: 1px solid #eae1db; border-radius: 8px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .product-img { width: 100%; height: 320px; object-fit: cover; }
+        .product-info { padding: 20px; flex-grow: 1; }
+        .product-name { font-size: 18px; margin-bottom: 8px; color: #2c2523; font-weight: 600; }
+        .product-price { font-size: 16px; color: #8a7366; font-weight: bold; margin-bottom: 15px; }
+        
+        /* Free WhatsApp Checkout Button */
+        .buy-btn { display: inline-block; width: 100%; background: #25D366; color: white; text-decoration: none; padding: 12px; font-weight: bold; border-radius: 4px; transition: 0.3s; border: none; cursor: pointer; }
+        .buy-btn:hover { background: #20ba5a; }
+
+        /* Footer Section */
+        footer { text-align: center; padding: 40px 20px; background: #ffffff; border-top: 1px solid #eae1db; margin-top: 60px; color: #777; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MY BRAND</div>
+        <a href="https://instagram.com/YOUR_PROFILE" target="_blank" class="instagram-link">Follow on Instagram</a>
+    </header>
+
+    <section class="hero">
+        <h1>Handcrafted Elegance</h1>
+        <p>Premium jewelry designed to elevate your everyday style. Order directly via WhatsApp.</p>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Our Collection</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=500&q=80" alt="Classic Necklace" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">Classic Pendant Necklace</div>
+                    <div class="product-price">₹1,299</div>
+                    <a href="https://wa.me/919999999999?text=Hi!%20I%20want%20to%20order%20the%20Classic%20Pendant%20Necklace.%20Please%20share%20payment%20details." target="_blank" class="buy-btn">Order via WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=500&q=80" alt="Royal Rings" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">Minimalist Gold Ring Set</div>
+                    <div class="product-price">₹899</div>
+                    <a href="https://wa.me/919999999999?text=Hi!%20I%20want%20to%20order%20the%20Minimalist%20Gold%20Ring%20Set.%20Please%20share%20payment%20details." target="_blank" class="buy-btn">Order via WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80" alt="Luxury Earrings" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">Elegant Pearl Drop Earrings</div>
+                    <div class="product-price">₹1,499</div>
+                    <a href="https://wa.me/919999999999?text=Hi!%20I%20want%20to%20order%20the%20Elegant%20Pearl%20Drop%20Earrings.%20Please%20share%20payment%20details." target="_blank" class="buy-btn">Order via WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Your Jewelry Brand. Crafted with care.</p>
+    </footer>
+
+</body>
+</html>
